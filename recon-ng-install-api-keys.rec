@@ -1,0 +1,67 @@
+# https://github.com/Raikia/Recon-NG-API-Key-Creation/blob/master/README-v4.8.3.md
+# https://subscription.packtpub.com/book/networking-and-servers/9781783982165/5/ch05lvl1sec45/setting-up-api-keys-for-recon-ng
+# /usr/bin/recon-ng
+
+keys add binaryedge_api     REPLACEME
+keys add bing_api           REPLACEME
+keys add builtwith_api      REPLACEME
+
+# https://search.censys.io/api
+# https://search.censys.io/account/api
+# Free account with API access
+keys add censysio_id        REPLACEME
+keys add censysio_secret    REPLACEME
+
+# keys add flickr_api
+
+keys add fullcontact_api    REPLACEME
+keys add github_api         REPLACEME
+keys add google_api         REPLACEME
+keys add hashes_api         REPLACEME
+
+# https://hunter.io/users/sign_up?from=api
+keys add hunter_io          REPLACEME
+
+# https://ipstack.com/signup/free
+# https://ipstack.com/dashboard
+keys add ipstack_api        REPLACEME
+
+keys add shodan_api         REPLACEME
+
+# keys add twitter_api
+# keys add twitter_secret
+# https://developer.twitter.com/en/portal/products/free
+
+keys add virustotal_api     REPLACEME
+
+# may be deprecated:
+keys add linkedin_api       REPLACEME
+keys add linkedin_secret    REPLACEME
+keys add instagram_api      REPLACEME
+keys add instagram_secret   REPLACEME
+keys add google_cse         REPLACEME
+
+snapshots take
+exit
+
+# https://www.whoxy.com/pricing.php
+# WHQXY - requires paid account, min $2 prepaid
+# keys add whoxy_api
+
+# HaveIBeenPwned: Paid required, min of $3.50/month: https://haveibeenpwned.com/API/Key
+# keys add hibp_api
+
+# shut down, no longer exists:
+# keys add spyse_api        REPLACEME
+
+# seems like it doesn't work or isn't offerred anymore
+# keys add namechk_api      REPLACEME
+
+# don't use this site, it redirects to a suspicious site: pwnedlist.com
+# keys add pwnedlist_api    REPLACEME
+# keys add pwnedlist_iv     REPLACEME
+# keys add pwnedlist_secret REPLACEME
+
+# https://www.ipinfodb.com/register
+# no longer accepting free API
+# keys add ipinfodb_api     REPLACEME

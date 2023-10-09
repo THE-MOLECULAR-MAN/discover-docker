@@ -1,0 +1,84 @@
+# add all of your API keys here. You'll need to sign up for accounts on each
+# site in order to get an API key. You can get a free account with limited
+# API access on most, but not all, of the sites.
+# 
+# Here's where this file goes in Kali: /etc/theHarvester/api-keys.yaml
+# The compose.yaml file bind-mounts this file to be at the proper location
+# inside the container. If you change your keys here, then they'll change
+# inside the container too.
+#
+# https://github.com/laramies/theHarvester/wiki/Installation#api-keys
+
+---
+apikeys:
+  bevigil:
+    key:
+    # Where to get an API key: https://bevigil.com/osint-api
+
+  binaryedge:
+    key:
+    # https://binaryedge.io/pricing.html
+    # https://app.binaryedge.io/account/api
+    # free is limited to 250 queries per month, no historical data
+    # no domain search
+
+  bing:
+    key:
+    # https://www.microsoft.com/en-us/bing/apis/pricing
+
+  bufferoverun:
+    key:
+
+  censys:
+    id: 
+    secret: 
+
+  criminalip:
+    key: 
+    # free API key
+    # https://www.criminalip.io/en/mypage/information
+
+  fullhunt:
+    key: 
+    # free
+    # https://fullhunt.io/user/settings/
+
+  github:
+    key: 
+    # https://github.com/settings/tokens
+    # Free with account
+
+  hunter:
+    key: 
+    # https://hunter.io/users/sign_up?from=api
+    # https://hunter.io/api-keys
+
+  intelx:
+    key:
+    # free
+    # https://intelx.io/account?tab=developer
+
+  pentestTools:
+    key:
+
+  projectDiscovery:
+    key:
+    # https://chaos.projectdiscovery.io/#/
+
+  rocketreach:
+    key:
+
+  securityTrails:
+    key: 
+    # Free API but pretty limited:
+    # https://securitytrails.com/corp/pricing
+
+  shodan:
+    key: 
+
+  virustotal:
+    key: 
+    # https://www.virustotal.com/gui/my-apikey
+
+  zoomeye:
+    key:

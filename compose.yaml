@@ -1,0 +1,23 @@
+# docker-compose up -d && docker-compose exec discover /bin/bash
+---
+version: "3.9"
+
+# timezone is set by Dockerfile during build process, not in this file
+
+services:
+  discover:
+    image: discover-kali-docker
+    network_mode: host
+    environment:
+      - VERSION=docker
+    volumes:
+      # use the versions of this text file from outside the container
+      # it will automatically create any necessary directories on the host
+      # and inside the container
+      # consider bind mounting the .db file to the host
+      - ./recon-ng-install-api-keys.rec:/usr/share/recon-ng/recon-ng-install-api-keys.rec
+      - ./theHarvester-api-keys.yaml:/etc/theHarvester/api-keys.yaml
+      - ~/discover.sh-output/:/root/data/
+
+    stdin_open: true  # docker run -i
+    tty: true         # docker run -t
