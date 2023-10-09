@@ -1,7 +1,11 @@
 # Watch out for Apple M1 chips
 # using the stable branch that doesn't include updates
 # using the rolling-release has screwed me before
-FROM kalilinux/kali-last-release:arm64
+# use arm64 for Apple M1 chips
+# FROM kalilinux/kali-last-release:arm64
+
+# use amd64 for other Apple 
+FROM kalilinux/kali-last-release:amd64
 
 # references:
 # https://nbctcp.wordpress.com/2017/03/14/installing-discover-on-kali-linux/
